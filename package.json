@@ -1,0 +1,47 @@
+{
+    "name": "@kingga/kc-config",
+    "version": "0.0.1",
+    "description": "A configuration container for the kings collection.",
+    "main": "index.js",
+    "repository": "https://github.com/kingga/kc-config",
+    "author": "Isaac Skelton <contact@isaacskelton.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^24.0.22",
+        "@types/mocha": "^5.2.7",
+        "@types/node": "^12.12.6",
+        "eslint": "^6.6.0",
+        "mocha": "^6.2.2",
+        "nyc": "^14.1.1",
+        "ts-loader": "^6.2.1",
+        "ts-node": "^8.4.1",
+        "typescript": "^3.7.2"
+    },
+    "keywords": [
+        "Kings Collection",
+        "Configuration",
+        "Config",
+        "JavaScript",
+        "TypeScript"
+    ],
+    "nyc": {
+        "extension": [
+            ".ts",
+            ".tsx"
+        ],
+        "include": [
+            "src/**/*"
+        ],
+        "exclude": [
+            "**/*/*.d.ts",
+            "**/*/*Type.ts"
+        ],
+        "reporter": [
+            "text"
+        ],
+        "all": true
+    },
+    "dependencies": {
+        "@kingga/kc-container": "^1.0.1"
+    }
+}

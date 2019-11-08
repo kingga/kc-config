@@ -1,0 +1,10 @@
+{
+    "foo": "bar",
+    "faz": {
+        "baz": {
+            "woo": "hoo"
+        }
+    },
+    "number": 7,
+    "boolean": true
+}
