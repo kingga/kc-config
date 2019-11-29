@@ -1,3 +1,3 @@
-export default interface List<T> {
-    [key: string]: T;
-}
+type List<T> = Record<string, T>;
+
+export default List;
