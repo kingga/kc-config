@@ -12,7 +12,7 @@ export default class ServiceProvider {
     }
 
     register(): void {
-        this.container.bind<IConfig>('IConfig', (c: IContainer) => new NonPersistentConfig([], c));
+        this.container.bind<IConfig>('IConfig', (c: IContainer) => new NonPersistentConfig({}, c));
         this.container.bind<IConfigLoaderFactory>('IConfigLoaderFactory', () => new ConfigLoaderFactory());
     }
 }

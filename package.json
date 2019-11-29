@@ -1,8 +1,9 @@
 {
     "name": "@kingga/kc-config",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "A configuration container for the kings collection.",
-    "main": "index.js",
+    "main": "build/index.js",
+    "types": "dist/index.d.ts",
     "repository": "https://github.com/kingga/kc-config",
     "author": "Isaac Skelton <contact@isaacskelton.com>",
     "license": "MIT",
@@ -49,6 +50,7 @@
         "js-yaml": "^3.13.1"
     },
     "scripts": {
-        "test": "nyc mocha tests/**/*.ts --require ts-node/register"
+        "test": "nyc mocha tests/**/*.ts --require ts-node/register",
+        "prepublish": "yarn test && yarn tsc"
     }
 }

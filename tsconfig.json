@@ -1,15 +1,23 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "target": "es5",
+        "target": "es6",
         "noImplicitAny": false,
         "sourceMap": false,
         "inlineSourceMap": false,
         "declaration": true,
         "declarationDir": "./dist",
-        "declarationMap": false
+        "declarationMap": false,
+        "lib": ["es6", "es7", "dom"],
+        "outDir": "./build"
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "src/*.ts",
+        "index.ts"
+    ],
+    "exclude": [
+        "node_modules/**/*",
+        "tests/**/*"
     ]
 }
